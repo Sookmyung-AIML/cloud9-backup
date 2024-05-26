@@ -1,0 +1,22 @@
+org: sookmyung
+app: x-men
+service: x-men-processing
+
+provider:
+  name: aws
+  runtime: python3.10
+  region: ap-northeast-2
+
+functions:
+  xmen_processing:
+    handler: lambda_function.lambda_handler
+    events:
+      - http:
+          path: /
+          method: any
+      - websocket:
+          route: $connect
+      - websocket:
+          route: $disconnect
+      - websocket:
+          route: $default
