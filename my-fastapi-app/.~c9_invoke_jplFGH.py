@@ -3,7 +3,7 @@ from mangum import Mangum
 
 app = FastAPI()
 
-@app.websocket("wss://sa79u8gqgf.execute-api.ap-northeast-2.amazonaws.com/production/")
+@app.websocket("")
 async def websocket_endpoint(websocket: WebSocket, client_id: str):
     await websocket.accept()
     while True:
