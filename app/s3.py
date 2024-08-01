@@ -5,9 +5,9 @@ import os
 class S3:
     def __init__(self):
         # 환경 변수로 AWS 자격 증명 설정
-        os.environ['AWS_ACCESS_KEY_ID'] = 'AKIA5GWG6R5KVXSHG4UK'
-        os.environ['AWS_SECRET_ACCESS_KEY'] = '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'
-        os.environ['AWS_DEFAULT_REGION'] = 'ap-northeast-2'
+        os.environ['AWS_ACCESS_KEY_ID'] = ''
+        os.environ['AWS_SECRET_ACCESS_KEY'] = ''
+        os.environ['AWS_DEFAULT_REGION'] = ''
         
         # S3와 상호작용을 위한 boto3 클라이언트 생성
         self.s3_client = boto3.client('s3')
