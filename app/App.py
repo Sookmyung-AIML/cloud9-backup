@@ -78,7 +78,7 @@ elif choice == "데이터 업로드":
                 else:
                     st.error(submit_message)
                     
-                endpoint_url = "https://runtime.sagemaker.ap-northeast-2.amazonaws.com/endpoints/xmen-tf-model-2024-05-23-14-03-47/invocations"
+                endpoint_url = ""
 
                 # 엔드포인트에 POST 요청 보내기
                 response = requests.post(endpoint_url)
@@ -153,9 +153,9 @@ elif choice == "데이터 시각화":
     st.subheader("데이터 시각화")
     if st.button("📊당일 데이터 내역 확인하기"):
         # API Gateway 엔드포인트 URL
-        API_ENDPOINT = 'https://349pm4hszk.execute-api.ap-northeast-2.amazonaws.com/Xmen_stage/xmen_test'
+        API_ENDPOINT = ''
         
-        AUTH_TOKEN = 'AKIA5GWG6R5KVXSHG4UK'
+        AUTH_TOKEN = ''
         
         headers = {
             'Authorization': f'Bearer {AUTH_TOKEN}',
