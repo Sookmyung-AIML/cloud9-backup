@@ -9,7 +9,7 @@ class S3Url:
     def url_submit(self):
         if self.user_id and self.url_list:
             # API Gateway 엔드포인트 URL
-            api_url = 'https://349pm4hszk.execute-api.ap-northeast-2.amazonaws.com/Xmen_stage/xmen-test2'
+            api_url = ''
         
             # 요청에 포함될 데이터
             data = {
