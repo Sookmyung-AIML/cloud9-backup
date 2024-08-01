@@ -11,8 +11,8 @@ from PIL import Image
 st.title("💬 AI SERVICE")
 
 # AWS 자격 증명 설정
-aws_access_key_id = "AKIA5GWG6R5KVXSHG4UK"
-aws_secret_access_key = "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"
+aws_access_key_id = ""
+aws_secret_access_key = ""
 
 # S3 클라이언트 초기화
 s3_client = boto3.client(
